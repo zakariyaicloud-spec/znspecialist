@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Job listings · ZN Specialists</title>
+<meta name="description" content="Current pharma and biotech roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="ZN Specialists home">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+        <rect width="30" height="30" rx="7" fill="#0b5c63"/>
+        <path d="M8 10h9l-9 10h9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="21.5" cy="10" r="1.8" fill="#fff"/><circle cx="21.5" cy="20" r="1.8" fill="#fff"/>
+        <path d="M21.5 11.8v6.4" stroke="#fff" stroke-width="1.4"/>
+      </svg>
+      <span>ZN Specialists <small>Pharma &amp; biotech</small></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="why-zn.html">Why ZN</a></li>
+      <li><a href="specialisms.html">Specialisms</a></li>
+      <li><a href="jobs.html" aria-current="page">Job listings</a></li>
+    </ul>
+    <div class="nav-end">
+      <a class="btn btn-primary" href="contact.html">Book a call</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Jobs</p>
+      <h1>Current roles.</h1>
+      <p class="lede">Contract and permanent roles in pharma and biotech. Don't see the right one? Send your CV and we'll tell you when something fits.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:40px">
+    <div class="wrap">
+      <div class="notice" role="note"><b>Example listings</b><span>These are example roles to show how this page works. They are not real vacancies yet.</span></div>
+
+      <div class="filters">
+        <div class="field">
+          <label for="f-area">Specialism</label>
+          <select id="f-area">
+            <option value="">All specialisms</option>
+            <option value="biostats">Biostatistics &amp; programming</option>
+            <option value="pkpd">PK/PD &amp; modelling</option>
+            <option value="data">Clinical data management</option>
+            <option value="heor">Health economics &amp; HEOR</option>
+            <option value="regulatory">Regulatory affairs</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-type">Contract type</label>
+          <select id="f-type">
+            <option value="">Contract or permanent</option>
+            <option value="Contract">Contract</option>
+            <option value="Permanent">Permanent</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-loc">Location</label>
+          <select id="f-loc">
+            <option value="">All locations</option>
+              <option value="Berkshire">Berkshire</option>
+              <option value="Hertfordshire">Hertfordshire</option>
+              <option value="London">London</option>
+              <option value="Remote (UK)">Remote (UK)</option>
+          </select>
+        </div>
+        <button class="btn btn-ghost" type="button" id="f-reset" style="padding:12px 18px">Clear</button>
+        <span class="count" id="job-count" aria-live="polite">6 roles</span>
+      </div>
+
+      <div class="jobs" id="jobs">
+        <article class="job" data-area="pkpd" data-type="Permanent" data-loc="Hertfordshire">
+          <div class="job-top"><span class="co">Global pharma company</span><span class="sample">Example listing</span></div>
+          <h3>Principal Pharmacometrician</h3>
+          <p>Lead population PK/PD and exposure-response modelling to support dose selection in early development.</p>
+          <div class="meta"><span>Permanent</span><span>Hertfordshire</span><span>Hybrid</span><span>Salary on request</span></div>
+          <a class="btn btn-ghost" href="find-a-role.html#cv">Apply <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="job" data-area="regulatory" data-type="Contract" data-loc="Hertfordshire">
+          <div class="job-top"><span class="co">Global pharma company</span><span class="sample">Example listing</span></div>
+          <h3>Regulatory Affairs Manager</h3>
+          <p>Manage MHRA and EMA submissions and variations for a marketed product portfolio.</p>
+          <div class="meta"><span>Contract</span><span>Hertfordshire</span><span>12 months, hybrid</span><span>Salary on request</span></div>
+          <a class="btn btn-ghost" href="find-a-role.html#cv">Apply <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="job" data-area="biostats" data-type="Contract" data-loc="Hertfordshire">
+          <div class="job-top"><span class="co">UK pharma company</span><span class="sample">Example listing</span></div>
+          <h3>Senior Statistical Programmer</h3>
+          <p>Produce SDTM and ADaM datasets and TLFs in SAS for a Phase III programme.</p>
+          <div class="meta"><span>Contract</span><span>Hertfordshire</span><span>6 months, hybrid</span><span>Salary on request</span></div>
+          <a class="btn btn-ghost" href="find-a-role.html#cv">Apply <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="job" data-area="heor" data-type="Permanent" data-loc="London">
+          <div class="job-top"><span class="co">UK pharma company</span><span class="sample">Example listing</span></div>
+          <h3>HEOR Manager</h3>
+          <p>Plan and deliver evidence for market access, including real-world studies and HTA support.</p>
+          <div class="meta"><span>Permanent</span><span>London</span><span>Hybrid</span><span>Salary on request</span></div>
+          <a class="btn btn-ghost" href="find-a-role.html#cv">Apply <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="job" data-area="regulatory" data-type="Permanent" data-loc="Berkshire">
+          <div class="job-top"><span class="co">Global CRO</span><span class="sample">Example listing</span></div>
+          <h3>Regulatory Affairs Consultant</h3>
+          <p>Advise clients on regulatory strategy and prepare clinical trial and marketing applications.</p>
+          <div class="meta"><span>Permanent</span><span>Berkshire</span><span>Hybrid</span><span>Salary on request</span></div>
+          <a class="btn btn-ghost" href="find-a-role.html#cv">Apply <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="job" data-area="data" data-type="Contract" data-loc="Remote (UK)">
+          <div class="job-top"><span class="co">Global CRO</span><span class="sample">Example listing</span></div>
+          <h3>Clinical Data Manager</h3>
+          <p>Lead data management on an oncology study in Medidata Rave, working with a global team.</p>
+          <div class="meta"><span>Contract</span><span>Remote (UK)</span><span>9 months, remote</span><span>Salary on request</span></div>
+          <a class="btn btn-ghost" href="find-a-role.html#cv">Apply <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <p class="empty" id="jobs-empty" hidden>No roles match those filters right now. <a href="find-a-role.html#cv">Send your CV</a> and we'll get in touch when one does.</p>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Not seeing your role?</h2>
+        <p class="muted">Send your CV and we'll get in touch when a role fits what you're looking for.</p>
+      </div>
+      <div class="cta-row"><a class="btn btn-primary" href="find-a-role.html#cv">Upload your CV <span class="arrow" aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="index.html" style="color:var(--ink)">ZN Specialists</a>
+      <p>Specialist recruitment for pharma and biotech.</p>
+      <p>© 2026 ZN Specialist Recruitment Ltd. Registered in England and Wales, company no. 12791611.</p>
+      <p>Fairgate House, 205 Kings Road, Tyseley, Birmingham, B11 2AA</p>
+    </div>
+    <div>
+      <h4>Work with us</h4>
+      <a href="index.html">Home</a>
+      <a href="hire-talent.html">Hire talent</a>
+      <a href="specialisms.html">Specialisms</a>
+      <a href="why-zn.html">Why ZN</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Careers</h4>
+      <a href="jobs.html">Job listings</a>
+      <a href="find-a-role.html">Find a role</a>
+      <a href="break-into-pharma.html">Break into pharma</a>
+      <a href="contact.html">Privacy notice</a>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
